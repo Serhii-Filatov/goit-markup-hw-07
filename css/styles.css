@@ -292,6 +292,47 @@ p {
   line-height: 1.7;
 }
 
+/* * What are we doing section * */
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--color-txt-basic);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__item{
+  position:relative;
+}
+.skills__text {
+  display: flex;
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  bottom: 0;
+  
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* * Our team section * */
+
+
+
 /* ************************************************************************************** */
 /* .button-portfolio {
   border: none;
@@ -635,51 +676,6 @@ p {
 
 
 
-/* =============================================== */
-
-
-
-
-
-.section-title {
-  margin-bottom: 50px;
-  text-align: center;
-
-  color: var(--color-txt-basic);
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-.section-txt-position {
-  display: flex;
-  width: 370px;
-  height: 70px;
-  justify-content: center;
-  align-items: center;
-  position:absolute;
-  bottom: 0;
-  
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  
-  background: rgba(47, 48, 58, 0.8);
-}
-.position-txt{
-  position:relative;
-}
-
-
-/* * Section images * */
-
-.section-img {
-  display: flex;
-  justify-content: space-between;
-}
-/* *==================================================* */
 
 /* *Our team section* */
 .team {
