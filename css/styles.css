@@ -1,12 +1,13 @@
 :root {
-  --main-bcg-color: #ffffff;
+  --color-logo: #000000;
+  --hero-footer-bcg: #2f303a;
+  --main-color: #ffffff;
   --main-txt-color: #757575;
   --brand-accent-color: #2196f3;
   --accent-btn-color: #188ce8;
   --color-nav: #212121;
-  --logo-color-part: #000000;
   --button-static-color: #f5f4fa;
-  --hero-footer-bcg: #2f303a;
+  
   --icon-static-color: #AFB1B8;
   --count-cards: 3;
   --dst-between: 30px;
@@ -14,9 +15,12 @@
 
 /* *==================================================* */
 body {
-  color: var(--main-txt-color);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  
+  background-color: var(--main-color);
+  color: var(--main-txt-color);
+  
 }
 
 .list {
@@ -28,6 +32,7 @@ body {
 .link {
   text-decoration: none;
   font-family: inherit;
+  color: inherit;
 }
 
 img {
@@ -59,55 +64,54 @@ p {
 
 /* *==================================================* */
 
-/* * Container * */
+/* * Containers * */
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
-/* * section * */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--main-bcg-color);
+  
 }
 
 /* ******************* Studio page ******************* */
 
 /* * Header section * */
-.header {
+.header{
   border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
   display: flex;
 }
 
 /* * Site navigation * */
-.nav {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  margin-right: 91px;
-}
 
 .logo {
-  color: var(--logo-color-part);
+  color: var(--color-logo);
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
 }
-.logo-web {
+.header__logo {
+  margin-right: 91px;
+}
+
+.logo--blue {
   color: var(--brand-accent-color);
 }
 
 /* * site nav * */
+.nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
   display: flex;
   align-items: center;
@@ -189,7 +193,7 @@ p {
 .icon-link:hover,
 .icon-link:focus{
   background-color: var(--brand-accent-color);
-  fill: var(--main-bcg-color);
+  fill: var(--main-color);
 }
 /* *********************************************** */
 
@@ -253,7 +257,7 @@ p {
 .hero-title {
   margin-bottom: 30px;
 
-  color: var(--main-bcg-color);
+  color: var(--main-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
@@ -262,7 +266,7 @@ p {
 
 /* * Hero button * */
 .hero-button {
-  color: var(--main-bcg-color);
+  color: var(--main-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -327,7 +331,7 @@ p {
   width: 528px;
   height: 581px;
 
-  background-color: var(--main-bcg-color);
+  background-color: var(--main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   
@@ -349,7 +353,7 @@ p {
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--main-bcg-color);   
+  background-color: var(--main-color);   
   
   fill:#000000;
   
@@ -406,7 +410,7 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--main-bcg-color);
+  color: var(--main-color);
 
   border: none;
   background-color: var(--brand-accent-color);
@@ -530,7 +534,7 @@ p {
   left: 0; 
 
   opacity: 0;
-  fill: var(--main-bcg-color);
+  fill: var(--main-color);
   background-color: var(--brand-accent-color);
   border-radius: 2px;       
   
@@ -661,7 +665,7 @@ p {
 }
 
 .team-card {
-  background-color: var(--main-bcg-color);
+  background-color: var(--main-color);
   box-shadow: 
   0px 1px 3px rgba(0, 0, 0, 0.12), 
   0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -733,19 +737,19 @@ p {
 /* *==================================================* */
 
 /* *Footer section* */
-.footer-section {
+.footer {
   background-color: var(--hero-footer-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 /* * logo * */
-.footer-logo {
+.footer__logo {
   margin-bottom: 20px;
 }
 
-.footer-logo-studio {
-  color: var(--main-bcg-color);
+.logo--white {
+  color: var(--main-color);
 }
 
 /* * Address  * */
@@ -760,7 +764,7 @@ p {
   margin-bottom: 9px;
 }
 .address {
-  color: var(--main-bcg-color);
+  color: var(--main-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -783,13 +787,13 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:var(--main-bcg-color);
+  color:var(--main-color);
 }
 
 .footer-social-title,
 .footer-subscribe-title{
   
-  color: var(--main-bcg-color);
+  color: var(--main-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -799,7 +803,7 @@ p {
   margin-bottom: 20px;
 }
 
-.footer-container{
+.footer__container{
   display: flex;
   align-items: baseline;
 }
@@ -819,7 +823,7 @@ p {
   height: 44px;
   
 
-  fill: var(--main-bcg-color);
+  fill: var(--main-color);
   background-color:  rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
@@ -856,7 +860,7 @@ p {
 
 .subscribe-input:hover,
 .subscribe-input:focus {    
-    color: var(--main-bcg-color);
+    color: var(--main-color);
     border-color: var(--brand-accent-color);
 }
 .submit-icon{
@@ -875,7 +879,7 @@ p {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--main-bcg-color);
+  color: var(--main-color);
 
   border: none;
   background-color: var(--brand-accent-color);
@@ -929,7 +933,7 @@ p {
 .button.current {
   
   background: var(--brand-accent-color);
-  color: var(--main-bcg-color);
+  color: var(--main-color);
 }
 
 
@@ -937,7 +941,7 @@ p {
 .button:focus {
   cursor: pointer;
   border: none;
-  color: var(--main-bcg-color);
+  color: var(--main-color);
 
   background-color: var(--brand-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -971,7 +975,7 @@ p {
   margin-top: 30px;
 
   text-align: left;
-  background: var(--main-bcg-color);
+  background: var(--main-color);
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -1003,8 +1007,8 @@ p {
 
 .portfolio-item:hover,
 .portfolio-item:focus{
-  background: var(--main-bcg-color);
-  border: 1px solid var(--main-bcg-color);
+  background: var(--main-color);
+  border: 1px solid var(--main-color);
   box-shadow: 0px 1px 1px 
   rgba(0, 0, 0, 0.12), 0px 4px 4px 
   rgba(0, 0, 0, 0.06), 1px 4px 6px 
@@ -1036,7 +1040,7 @@ p {
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: var(--main-bcg-color);
+  color: var(--main-color);
 }
 .portfolio-img-card {
   position: relative;

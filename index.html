@@ -17,20 +17,20 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
+  
   <body>
-    <!-- Header section -->
-
+    <!-- * Header section * -->
     <header class="header">
-      <div class="container header-container">
-        <!-- Site navigation -->
-        <nav class="nav">
-          <!-- logo -->
-          <div class="header-logo">
-            <a class="logo link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-          </div>
+      <div class="container header__container">
 
-          <!-- site nav -->
+        <!-- * Site navigation * -->
+        <nav class="nav">
+          <!--  logo  -->
+          <div class="logo header__logo">
+            <a class="link" href="./index.html"><span class="logo--blue">Web</span>Studio</a>
+          </div>
+          <!-- UNDONE -->
+          <!-- navigation list -->
 
           <ul class="site-nav list">
             <li class="site-nav-item">
@@ -64,9 +64,11 @@
         </ul>
       </div>
     </header>
+    <!-- * Header section * -->
 
+    <!-- * Main section * -->
     <main>
-      <!-- Main section -->
+      <!-- * Hero section * -->
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">
@@ -77,8 +79,10 @@
           <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
+      <!-- * Hero section end * -->
 
-      <!-- Fetchers section -->
+
+      <!-- * Fetchers section * -->
       <section class="section section-truncation">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
@@ -134,8 +138,9 @@
           </ul>
         </div>
       </section>
+      <!-- * Fetchers section end * -->
 
-      <!-- What are we doing -->
+      <!-- * What are we doing section * -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -173,8 +178,9 @@
           </ul>
         </div>
       </section>
+      <!-- * What are we doing section end * -->
 
-      <!-- Our team section -->
+      <!-- * Our team section * -->
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -507,19 +513,19 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer section -->
-    <footer class="footer-section">
+    <!-- * Main section end* -->
+    
+    <!-- * Footer section * -->
+    <footer class="footer">
       <div class="container">
         <!-- logo -->
-        <div class="footer-container">
+        <div class="footer__container">
           <div>
-            <div class="footer-logo">
-              <a class="logo link" href="./index.html"
-                ><span class="logo-web">Web</span><span class="footer-logo-studio">Studio</span></a
-              >
+            <div class="logo footer__logo">
+              <a class="link" href="./index.html">
+                <span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
             </div>
-
+            
             <!-- Address -->
             <address class="footer-site-contacts">
               <ul class="list">
@@ -618,7 +624,9 @@
         </div>
       </div>
     </footer>
+    <!-- * Footer section * -->
 
+    <!-- * Modal window section * -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
@@ -699,6 +707,9 @@
         </div>
       </div>
     </div>
+    <!-- * Modal window section * -->
+    
     <script src="./js/modal.js"></script>
   </body>
+  
 </html>
