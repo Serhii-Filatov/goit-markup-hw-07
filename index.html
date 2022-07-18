@@ -53,7 +53,7 @@
           <li class="nav__item">
             <a class="nav__link link" href="mailto:info@devstudio.com">
               <span class="icon">
-                <svg class="nav__icon" width="16" height="12">
+                <svg class="icon--start" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</span>
             </a>
           </li>
@@ -61,7 +61,7 @@
           <li class="nav__item">
             <a class="nav__link link" href="tel:+380961111111">
               <span class="icon"
-                ><svg class="nav__icon" width="10" height="16">
+                ><svg class="icon--start" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</span>
             </a>
           </li>
@@ -80,67 +80,68 @@
             для вашего бизнеса
           </h1>
           <!-- Hero button -->
-          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
       <!-- * Fetchers section * -->
-      <section class="section section-truncation">
+      <section class="section section--truncation">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
 
-          <ul class="section-list list">
-            <li class="section-list-item list">
-              <div class="fetchers-icons">
+          <ul class="fetchers__list list">
+            
+            <li class="fetchers__item list">
+              <div class="icon fetchers__icons">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-title-item">Внимание к деталям</h3>
-              <p class="studio-section-text">
+              <h3 class="fetchers__title">Внимание к деталям</h3>
+              <p class="fetchers__text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
 
-            <li class="section-list-item list">
-              <div class="fetchers-icons">
+            <li class="fetchers__item list">
+              <div class="icon fetchers__icons">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section-title-item">Пунктуальность</h3>
-              <p class="studio-section-text">
+              <h3 class="fetchers__title">Пунктуальность</h3>
+              <p class="fetchers__text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
 
-            <li class="section-list-item list">
-              <div class="fetchers-icons">
+            <li class="fetchers__item list">
+              <div class="icon fetchers__icons">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-title-item">Планирование</h3>
-              <p class="studio-section-text">
+              <h3 class="fetchers__title">Планирование</h3>
+              <p class="fetchers__text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
 
-            <li class="section-list-item list">
-              <div class="fetchers-icons">
+            <li class="fetchers__item list">
+              <div class="icon fetchers__icons">
                 <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-title-item">Современные технологии</h3>
-              <p class="studio-section-text">
+              <h3 class="fetchers__title">Современные технологии</h3>
+              <p class="fetchers__text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
         </div>
       </section>
-      <!-- * Fetchers section end * -->
+      
 
       <!-- * What are we doing section * -->
       <section class="section">
@@ -529,29 +530,30 @@
             </div>
             
             <!-- Address -->
-            <address class="footer-site-contacts">
-              <ul class="list">
-                <li class="site-contacts-item">
-                  <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <p class="address__txt">г. Киев, пр-т Леси Украинки, 26</p>
                 </li>
 
-                <li class="site-contacts-item">
+                <li class="address__item">
                   <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
 
-                <li class="site-contacts-item">
+                <li class="address__item">
                   <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
+          <!-- *************************************************************** -->
           <div class="footer-social">
-            <h2 class="footer-social-title">Присоединяйтесь</h2>
+            <h2 class="footer-social__title">Присоединяйтесь</h2>
 
-            <ul class="footer-social-media list">
-              <li class="footer-social-item">
+            <ul class="footer-social__list list">
+              <li class="footer-social__item">
                 <a
-                  class="footer-icon-link link"
+                  class="icon footer-icon-link link"
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -562,9 +564,9 @@
                 </a>
               </li>
 
-              <li class="footer-social-item">
+              <li class="footer-social__item">
                 <a
-                  class="footer-icon-link link"
+                  class="icon footer-icon-link link"
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -575,9 +577,9 @@
                 </a>
               </li>
 
-              <li class="footer-social-item">
+              <li class="footer-social__item">
                 <a
-                  class="footer-icon-link link"
+                  class="icon footer-icon-link link"
                   href="https://www.facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -588,9 +590,9 @@
                 </a>
               </li>
 
-              <li class="footer-social-item">
+              <li class="footer-social__item">
                 <a
-                  class="footer-icon-link link"
+                  class="icon footer-icon-link link"
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -617,7 +619,7 @@
               </label>
               <button class="footer-submit-btn" type="submit">
                 Подписаться
-                <svg class="submit-icon" width="24" height="24">
+                <svg class="icon--end" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
