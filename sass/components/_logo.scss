@@ -5,10 +5,10 @@
     font-weight: 700;
     line-height: 1.2;
     
-        &--blue {
+        &-dark-theme {
             color: var(--brand-color);
         }
-        &--white {
+        &-light-theme {
             color: var(--color-main);
         }
 }

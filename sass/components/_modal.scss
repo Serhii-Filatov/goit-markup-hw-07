@@ -57,7 +57,9 @@
   .modal-form-label:hover .modal-form-input,
   .modal-form-label:focus .modal-form-input,
   .modal-form-label:hover .modal-form-icon,
-  .modal-form-label:focus .modal-form-icon {
+  .modal-form-label:focus .modal-form-icon,
+  .modal-txt-area:hover,
+  .modal-txt-area:focus {
       fill: var(--brand-color);
       border-color: var(--brand-color);
   }
